@@ -288,5 +288,9 @@ footer{
         /* width: 35%;
         position: relative; */
     }
+    main button{
+        padding:  15px 35px;
+        margin-top: 1.5em;
+    }
 }
 
