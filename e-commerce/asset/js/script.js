@@ -6,7 +6,7 @@ async function getProduct() {
     errorMessage.style.display = 'none'; // Hide error message initially
 
     try {
-        const reqs = await fetch("https://fakestoreapi.com/products");
+        const reqs = await fetch('https://fakestoreapi.com/products');
         
         if (!reqs.ok) {
             throw new Error('Network response was not ok');
