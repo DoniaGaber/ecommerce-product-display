@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.padding__x{
+    padding-inline: 4em;
+}
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Poppins;
+    font-size: 1.5em;
+    color: #333;
+}
+#error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 228, 228, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Poppins;
+    font-size: 1.5em;
+    color: #333;
+    z-index: 1000; /* Ensure it's above other content */
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+nav .nav__logo{
+    display: flex;
+    /* gap:1em ; */
+}
+nav .nav__logo h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Montserrat;
+}
+nav .nav__links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-size: 1em;
+    color: #000000;
+    font-family: Poppins;
+}
+/* .link__active{
+    border-bottom: 1px #666666 solid;
+    color: #666666;
+}
+  */
+nav .nav__links ul li a{
+    font-size: 1em;
+    color: #000000;
+    text-transform: capitalize;
+    transition: border-bottom  0.4s , color 0.6s;
+}
+nav .nav__links ul li a:hover{
+    border-bottom: 1px #666666 solid;
+    color: #666666;
+}  
+nav .nav__icons  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 1em;
+}
+nav .nav__icons i{
+    font-size: 1.5em;
+    /* font-weight: 200; */
+}
+.nav__toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+/* main section  */
+
+main{
+    background-image: url('../images/scandinavian-interior-mockup-wall-decal-background\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+main div{
+    background-color: #FFF3E3;
+    padding: 6em 3em 1em ;
+    margin: 3em ;
+    width: 35%;
+    position: relative;
+}
+main  h3{
+    font-size: 1em;
+    font-family: Poppins;
+    text-transform: capitalize;
+}
+main  h2{
+    color: #B88E2F;
+    font-size: 3.25em;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Poppins; 
+}
+main  p{
+    color: #333333;
+    font-family: Poppins;
+}
+main button{
+    background-color: #B88E2F;
+    color: #FFFFFF;
+    border: none;
+    padding:  25px 72px;
+    /* position: absolute;
+    bottom: 1em; */
+    margin-top: 3em;
+}
+/* second section  */
+.section__Browse{
+    text-align: center;
+    padding-block: 4em;
+}
+.section__Browse .title,
+.section__product .title{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Poppins;
+}
+.section__Browse p{
+    font-size: 1em;
+    font-weight: 500;
+    font-family: Poppins;
+    color: #666666;
+}
+.section__Browse__boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 4em;
+    flex-wrap: wrap;
+}
+.section__Browse__boxes__box .image{
+    padding-bottom: 2em;
+}
+.section__Browse__boxes__box span{
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: Poppins;
+    color: #333;
+    padding-top: 2em;
+}
+.section__product{
+    text-align: center;
+    padding-block: 3em;
+}
+.section__product_boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 4em;
+    flex-wrap: wrap;
+}
+.section__product_boxes__box{
+    background-color: #F4F5F7;  
+    border-radius: 1em; 
+    overflow: hidden;
+    padding-bottom: 2em;
+    width: calc((100% - 6em ) /4);
+}
+.section__product_boxes__box .image{
+    width: 100%;
+    height: 300px;
+}
+.section__product_boxes__box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section__product_boxes__box h3{
+    font-size: 1.5em;
+    font-family: Poppins;
+
+}
+.section__product_boxes__box span{
+    font-size: 1em;
+    font-family: Poppins;
+    color: #3A3A3A;
+}
+.section__product_boxes p{
+    font-size: 1em;
+    font-family: Poppins;
+    color: #3A3A3A;
+}
+footer{
+    background-color: #B88E2F ;
+    color: #F4F5F7;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1em;
+    margin: 1em;
+    font-family: Poppins;
+    font-size: 1em;
+    border-radius: 1em;
+
+}
+/* Media Queries for Responsiveness */
+@media (max-width:1024px) {
+    .section__product_boxes__box{
+        width: calc((100% - 4em) / 3);
+    }
+    
+}
+@media (max-width:928px) {
+    main div{
+        width: 60%;
+    }
+    main h2{
+        font-size: 2.5em;
+    }
+    .section__product_boxes__box{
+        width: calc((100% - 2em) /2);
+    }
+}
+@media (max-width:690px) {
+    .section__product_boxes__box{
+        width: 100% ;
+    }
+    nav .nav__links {
+        display: none; 
+        position: absolute; 
+        top: 10vh; 
+        left: 0;
+        right: 0;
+        background: white; 
+        flex-direction: column;
+        padding: 1em 0; 
+        z-index: 1000; 
+    }
+    .padding__x{
+        padding-inline: 3em;
+    }
+    nav .nav__links.active {
+        display: flex; 
+    }
+
+    .nav__toggle {
+        display: block; 
+      }
+
+    nav .nav__links ul {
+        flex-direction: column;
+        gap: 1em;
+     }
+     main  h2{
+        font-size:2em;
+     }
+     main div{
+        padding: 3em 1.5em .5em ;
+        margin: 1.5em ;
+        /* width: 35%;
+        position: relative; */
+    }
+    main button{
+        padding:  15px 35px;
+        margin-top: 1.5em;
+    }
+}
+@media (max-width:320px) {
+    main  h2{
+        font-size:1.75em;
+     }
+     main div{
+        padding: 2em 1.5em .5em;
+        margin: 3em ;
+    }
+    main button{
+        padding:  7px 20px;
+        margin-top: .5em;
+    }
+    main p{
+        font-size: 0.5;
+    }
+    .padding__x{
+        padding-inline: 2em;
+    }
+}
+
