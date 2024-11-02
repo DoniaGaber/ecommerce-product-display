@@ -233,6 +233,7 @@ footer{
     border-radius: 1em;
 
 }
+/* Media Queries for Responsiveness */
 @media (max-width:1024px) {
     .section__product_boxes__box{
         width: calc((100% - 4em) / 3);
@@ -278,9 +279,14 @@ footer{
         flex-direction: column;
         gap: 1em;
      }
+     main  h2{
+        font-size:2em;
+     }
+     main div{
+        padding: 3em 1.5em .5em ;
+        margin: 1.5em ;
+        /* width: 35%;
+        position: relative; */
+    }
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    
-}
